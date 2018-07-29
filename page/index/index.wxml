@@ -1,0 +1,49 @@
+<!--page/index/index.wxml-->
+<text>这是首页</text>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1">
+            <view class='index-limg1'>
+              <image></image>
+            </view>
+            <view class='index-limg1-title'>扫码购物</view>
+          </view>
+          <view class="flex-item demo-text-2">
+            <view class='index-limg1'>
+              <image></image>
+            </view>
+            <view class='index-limg1-title'>常购清单</view></view>
+          <view class="flex-item demo-text-3">
+            <view class='index-limg1'>
+              <image></image>
+            </view>
+            <view class='index-limg1-title'>领优惠券</view>
+          </view>
+          <view class="flex-item demo-text-1">
+            <view class='index-limg1'>
+              <image></image>
+            </view>
+            <view class='index-limg1-title'>商店特卖</view>
+          </view>
+          <view class="flex-item demo-text-2">
+            <view class='index-limg1'>
+              <image></image>
+            </view>
+            <view class='index-limg1-title'>商店拼购</view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
