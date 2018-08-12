@@ -1,2 +1,4 @@
 <!--page/mine/mine.wxml-->
 <text>我的</text>
+
+ <button open-type="getUserInfo">获取用户信息</button> 

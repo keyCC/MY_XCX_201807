@@ -1,7 +1,10 @@
 <!--page/index/index.wxml-->
-<text>这是首页</text>
+<!-- <text>这是首页</text> -->
+<!-- 最外层容器 -->
 <view class="container">
+  <!-- 容器内容body部分 -->
   <view class="page-body">
+    <!-- 广告轮播图 -->
     <view class="page-section swiper">
       <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">

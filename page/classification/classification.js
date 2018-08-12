@@ -5,9 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    message:"数据绑定",
+    array:[1,'two','三'],
+    view:'c',
+    templateDate:{
+      one:"1",
+      two:"2"
+    },
+    count:1
   },
-
+  add:function(e){
+    this.setData({
+      count:this.data.count+1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

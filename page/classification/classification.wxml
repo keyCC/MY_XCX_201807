@@ -1,2 +1,25 @@
 <!--page/classification/classification.wxml-->
 <text>分类</text>
+
+<!-- 数据绑定 -->
+<view>{{message}}</view>
+
+<!-- 列表渲染 -->
+<view wx:for="{{array}}">{{item}}</view>
+
+<!-- 条件渲染 -->
+<view wx:if="{{view=='a'}}">条件1</view>
+<view wx:elif="{{view=='b'}}">条件2</view>
+<view wx:else="{{view=='c'}}">条件3</view>
+
+<!-- 模板 -->
+<template name="templateName">
+  <view>
+    a:{{one}},b:{{two}}
+  </view>
+</template>
+
+<template is="templateName" data="{{...templateDate}}"></template>
+
+<!-- 事件 -->
+<button bindtap='add'>{{count}}</button>
